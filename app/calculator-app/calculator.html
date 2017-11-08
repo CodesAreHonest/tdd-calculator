@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!--Include JavaScript file into HTML-->
+    <script src="calculatorKey.js"></script>
+    <script src="calculator.js">
+    </script>
+
+    <!--Include Header and CSS files into HTML-->
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body ng-app="calcApp">
+<div class="background" ng-controller="calcCtrl">
+    <img src="image/wallpaper.jpg">
+    <div class="display"><input type="text" id="display" value="{{currentDisplay}}" disabled></div>
+    <div class="keyboard">
+        <p>
+            <input type="button" class="button" value=" " disabled>
+            <input type="button" class="button" value="(-)" id="negative" ng-click="setNegative()">
+            <input type="button" class="button" value="C" ng-click="clear()">
+            <input type="button" class="button" value="&divide" id="divide" ng-click="operatorEntered('/')">
+        </p>
+        <p>
+            <input type="button" class="button" value="7" id="seven" ng-click="numberClicked(7)">
+            <input type="button" class="button" value="8" id="eight" ng-click="numberClicked(8)">
+            <input type="button" class="button" value="9" id="nine" ng-click="numberClicked(9)">
+            <input type="button" class="button" value="X" id="multiply" ng-click="operatorEntered('*')">
+        </p>
+        <p>
+            <input type="button" class="button" value="4" id="four" ng-click="numberClicked(4)">
+            <input type="button" class="button" value="5" id="five" ng-click="numberClicked(5)">
+            <input type="button" class="button" value="6" id="six" ng-click="numberClicked(6)">
+            <input type="button" class="button" value="-" id="minus" ng-click="operatorEntered('-')">
+        </p>
+        <p>
+            <input type="button" class="button" value="1" id="one" ng-click="numberClicked(1)">
+            <input type="button" class="button" value="2" id="two" ng-click="numberClicked(2)">
+            <input type="button" class="button" value="3" id="three" ng-click="numberClicked(3)">
+            <input type="button" class="button" value="+" id=plus" ng-click="operatorEntered('+')">
+        </p>
+        <p>
+            <input type="button" class="button" value="0" id="zero" ng-click="numberClicked(0)">
+            <input type="button" class="button" value="." id="dot" ng-click="setDecimal()">
+            <input type="button" class="button" value="=" id="equal" ng-click="calculate()">
+            <input type="button" class="button" value=" " disabled>
+        </p>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>

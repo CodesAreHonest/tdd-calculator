@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+html {
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.background {
+    margin: 150px 0 0 0;
+    text-align: center;
+}
+
+.button {
+    position: relative;
+
+    width: 60px;
+    height: 55px;
+    border: none;
+    background: none;
+    top: -740px;
+    font-size: 40px;
+    margin: 7px;
+    margin-left: 12px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+
+}
+
+.keyboard {
+    margin-top: 210px;
+}
+
+.button:active {
+    background-color: #938a82;
+    transform: translateY(4px);
+    opacity: 8.1;
+    border: none;
+}
+
+.display input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: -550px;
+    background-color: #e6e6e6;
+    height: 115px;
+    width: 345px;
+    padding-left: 10px;
+
+}
