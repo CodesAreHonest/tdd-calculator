@@ -78,7 +78,7 @@ Highlights
 ==========
 Software Resources
 ------------------
-1. Linux Ubuntu 16.04.3 LTS 64-bit  
+1. Linux Ubuntu 16.04.3 LTS 64-bit (Optional)
 2. IntelliJ PhpStorm Ultimate version  
 3. Jasmine Core 2.4.1  
 4. Karma Server v0.13.22  
