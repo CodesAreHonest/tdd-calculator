@@ -2,16 +2,19 @@
 module.exports = function(config) {
   config.set({
 
-    basePath: 'app',
+    basePath: './',
 
     files: [
+        'node_modules/angular/angular.js',
+        'node_modules/angular-route/angular-route.js',
+        'node_modules/angular-mocks/angular-mocks.js',
       // 'lib/bower_components/angular/angular.js',
       // 'lib/bower_components/angular-route/angular-route.js',
       // 'lib/bower_components/angular-mocks/angular-mocks.js',
       // 'lib/components/**/*.js',
       // 'lib/view*/**/*.js',
-      'calculator-app/calculator.js',
-        'calculator-app/calculatorSpec.js'
+      'app/calculator-app/calculator.js',
+        'app/calculator-app/calculatorSpec.js'
 
     ],
 
